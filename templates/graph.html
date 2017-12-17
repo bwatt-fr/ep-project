@@ -1,0 +1,39 @@
+<html>
+<head>
+  <link rel="stylesheet" type="text/css" href="/static/styles/vendor.css"/>
+  <link rel="stylesheet" href="/static/alchemy.css"/>
+	<meta charset="utf-8"/>
+</head>
+<body>
+  <div class="alchemy" id="alchemy"></div>
+
+  <script src="/static/alchemy.js"></script>
+  <script src="/static/scripts/vendor.js"></script>
+  <script type="text/javascript">
+				var config = {
+					dataSource: '/static/tags.json',
+					edgeTypes: {"type": ["1", "2", "3", "4"]},
+					edgeStyle: {
+						"1": {
+							"width": 5,
+							"color": "#ff4040"
+						},
+						"2": {
+							"width": 10,
+							"color": "#66cd00"
+						},
+						"3": {
+							"width": 15,
+							"color": "#eead0e"
+						},
+						"4": {
+							"width": 20,
+							"color": "#b23aee"
+						}
+					}
+        };
+
+        alchemy = new Alchemy(config)
+    </script>
+  </body>
+</html>
