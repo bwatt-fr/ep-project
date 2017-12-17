@@ -1,11 +1,16 @@
 #encoding: utf8
 
-from bs4 import BeautifulSoup
 from collections import Counter
 from itertools import combinations
 import json
+import sys
 
-with open('data/bookmarks_public_20171214_222058.html') as fp:
+from bs4 import BeautifulSoup
+
+data_file = sys.argv[0]
+
+# Extraction of the tags
+with open(data_file) as fp:
     soup = BeautifulSoup(fp, 'html.parser')
 
 links = soup.find_all('a')
