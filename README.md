@@ -28,6 +28,7 @@ Note on the server: on production, I don't use the dev server provided by Flask,
 
 This project was developped very fast, and suffers of lacks of problem. Lots of things can be done to improve it:
 - although Alchemy do the work for the datavisualisation here, it is an old library which is no more updated, and has some bugs. It would be better to replace it by another one
+- modify the size of the nodes to show which one are the more used
 - the installation of the project is still manual. It would be good to create a script, and make a better README here
 - for the moment, there are two steps to make the project, one to create the graph and one which is the server. It would be better to mix both, and to provide an interface to upload the export of shaarli, and make the transformation directly on the server
 - in the future, why not trying to provide this as an extension for shaarli?
